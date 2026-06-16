@@ -120,7 +120,7 @@ class VNExpressSpider(scrapy.Spider):
         self.article_count += 1
 
         self.logger.info(
-            f"Accident Article {self.article_count}: {title}"
+            f"Article {self.article_count}: {title}"
         )
 
         yield {
