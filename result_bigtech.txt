@@ -1,0 +1,12 @@
+Global_Apple	2699
+Global_Google	3484
+Global_Microsoft	1206
+Global_Nvidia	613
+Global_OpenAI	1671
+Global_VinFast	2
+VN_Apple	2099
+VN_Google	801
+VN_Microsoft	403
+VN_Nvidia	558
+VN_OpenAI	573
+VN_VinFast	21

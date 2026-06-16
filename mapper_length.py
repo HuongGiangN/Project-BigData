@@ -16,8 +16,7 @@ for line in sys.stdin:
 		url = data.get('url', '')
 		source_type = "VN" if (".vn" in url or "dantri" in url or "vnexpress" in url) else "Global"
 		
-		words = content.split()
-		word_count = len(words) 
+		word_count = len(content.split()) 
 
 		if word_count < 300:
 			length_group = "Short"

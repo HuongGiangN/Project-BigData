@@ -1,4 +1,4 @@
-Global	Short	1
+nnaGlobal	Short	1
 Global	Medium	5
 Global	Long	1
 Global	Medium	10

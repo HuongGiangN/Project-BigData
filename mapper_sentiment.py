@@ -10,11 +10,16 @@ try:
 			line = line.strip()
 			if not line:
 				continue
-			parts = line.split('\t')
-			if len(parts) == 2:
-				sentiment_dict[parts[0].lower()] = int(parts[1])
-except Exception as e:
-	sys.stderr.write(f"Loi doc du lieu: {e}\n")
+			parts = line.split()
+			if len(parts) >= 2:
+				score = parts[-1]
+				word = " ".join(parts[:-1]).lower()
+				try:
+					sentiment_dict[word] = int(score)
+				except:
+					continue
+except:
+	pass
 
 for line in sys.stdin:
 	line = line.strip()
